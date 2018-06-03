@@ -1,0 +1,22 @@
+{
+  "none": {
+    "id": 0,
+    "name": "none"
+  },
+  "guitar": {
+    "id": 1,
+    "name": "guitar"
+  },
+  "ukelele": {
+    "id": 2,
+    "name": "ukelele"
+  },
+  "violin": {
+    "id": 3,
+    "name": "violin"
+  },
+  "bajo": {
+    "id": 4,
+    "name": "bajo"
+  }
+}

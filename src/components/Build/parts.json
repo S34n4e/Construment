@@ -1,0 +1,64 @@
+{
+  "parts": {
+    "0": {
+      "id": "",
+      "instrument": "",
+      "part": "",
+      "price": 0,
+      "color": "",
+      "src": "images/parts/.png"
+    },
+    "1": {
+      "id": "1",
+      "instrument": "guitar",
+      "part": "body",
+      "price": 150,
+      "color": "brown",
+      "src": "images/parts/guitar.png"
+    },
+    "2": {
+      "id": "2",
+      "instrument": "guitar",
+      "part": "body",
+      "price": 160,
+      "color": "brown",
+      "src": "images/parts/guitar.png"
+    },
+    "3": {
+      "id": "3",
+      "instrument": "guitar",
+      "part": "neck",
+      "price": 130,
+      "color": "brown",
+      "src": "images/parts/guitar.png"
+    },
+    "4": {
+      "id": "4",
+      "instrument": "guitar",
+      "part": "neck",
+      "price": 140,
+      "color": "brown",
+      "src": "images/parts/guitar.png"
+    },
+    "5": {
+      "id": "5",
+      "instrument": "guitar",
+      "part": "peg",
+      "price": 120,
+      "color": "brown",
+      "src": "images/parts/guitar.png"
+    },
+    "6": {
+      "id": "6",
+      "instrument": "guitar",
+      "part": "peg",
+      "price": 110,
+      "color": "brown",
+      "src": "images/parts/guitar.png"
+    },
+    "7": {},
+    "8": {},
+    "9": {},
+    "10": {}
+  }
+}
