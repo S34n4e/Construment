@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Menu from './components/Menu';
-//import Footer from './components/footer';
+import Footer from './components/footer';
 
 import './components/toTop.css';
 import ToTop from './components/toTop';
-//import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './App.css';
 
 import Main from './Main';
-//import AppRoutes3 from './routes2';
+import AppRoutes3 from './routes2';
 
 class App extends Component {
 
@@ -26,20 +26,20 @@ class App extends Component {
           
           {/*Este div contiene el Carrusel*/}
           <div>
-                {/*<AppRoutes3 />*/}
+                <AppRoutes3 />
       	  </div>
 
           
           
           {/*Este div contiene las rutas hacia los demás módulos*/}
       		<section>
-            {/*  <Main /> */}
+              <Main /> 
       	  </section>
        
           {/*Este div contiene el footer*/}
           <div className="page-footer">
-             {/* <Footer />
-              <ToTop />*/}
+              <Footer />
+              <ToTop />
           </div>
       
       </div>
