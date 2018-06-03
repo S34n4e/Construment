@@ -1,0 +1,41 @@
+---------------------------------------------
+Crear Proyecto de React desde cero en C9
+---------------------------------------------
+    npm install -g create-react-app //Instala react
+    create-react-app my-app //Crea proyecto my-app es el nombre
+    cd my-app //Esto es solo sino se ubica en la carpeta del proyecto
+    npm start //Levantar la aplicación
+    
+    Nota: recuerde borrar las carpetas existentes
+          y colocar las creadas por React (solo dejar la de .c9)
+---------------------------------------------
+
+---------------------------------------------------------------------------------------------------
+Crear hosting en Heroku para deploy desde cero es (importante primero tener una cuenta en heroku)
+---------------------------------------------------------------------------------------------------
+    git init //Inicia el repositorio
+    heroku app:create construment -b https://github.com/mars/create-react-app-buildpack.git //Crea el repositorio en heroku
+    git add .  //Agrega los archivos del proyecto para subirlos 
+    git commit -m "react-create-app on Heroku" //Confirma los cambios
+    git push heroku master //Sube los archivos con los cambios al repositorio de heroku
+    heroku open //Esto es opcional, en C9 no es funcional
+---------------------------------------------
+
+|--------------------------------------------------------------
+|Subir modificaciones a heruko una vez que y fue configurado
+|--------------------------------------------------------------
+|   git add .               | //Agrega los archivos del proyecto para subirlos 
+|   git commit -m "mensaje" | //Confirma los cambios
+|   git push heroku master  | //Sube los archivos con los cambios al repositorio de heroku
+|--------------------------------------------------------------
+
+---------------------------------------------------------------
+Dependencias del proyecto (importante: instalar solo con npm)
+---------------------------------------------------------------
+npm install --save react-router-dom
+npm install react-responsive-carousel --save
+npm install react-image-gallery --save
+npm install --save react-images
+npm install --save react-photo-gallery
+--------------------------------------------------------------
+
