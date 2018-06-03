@@ -4,7 +4,7 @@ import Footer from './components/footer';
 
 import './components/toTop.css';
 import ToTop from './components/toTop';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+//import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './App.css';
 
 import Main from './Main';
@@ -15,7 +15,7 @@ class App extends Component {
   render(){
    
     return(
-      //Este div debe encerrar el resto para que react lo indentifique como un solo elemento
+      //Este div debe encerrar el resto para que react lo indentifique como un solo elemento.
       <div>
       
           {/*Contiene el encabezado de la aplicación*/}
@@ -26,7 +26,7 @@ class App extends Component {
           
           {/*Este div contiene el Carrusel*/}
           <div>
-                <AppRoutes3 />
+                {/*<AppRoutes3 />*/}
       	  </div>
 
           
