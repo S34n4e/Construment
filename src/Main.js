@@ -9,8 +9,8 @@ import About from './components/About/about.js';
 //import Face from './components/Home/faceCom.js';
 import Build from './components/Build/build.js';
 import BuildEditor from './components/Build/buildEditor.js';
-//import Gallery from './components/Gallery/gallery.js';
-//import Tutorial from './components/Tutorial/tutorial.js';
+import Gallery from './components/Gallery/gallery.js';
+import Tutorial from './components/Tutorial/tutorial.js';
 
 
 const Main = () => (
@@ -21,8 +21,8 @@ const Main = () => (
             
             <Route exact path="/build" component={Build} />
             <Route exact path="/buildEditor" component={BuildEditor} />
-            {/*<Route exact path="/gallery" component={Gallery} />*/}
-            {/*<Route exact path="/tutorial" component={Tutorial}/>*/}
+            <Route exact path="/gallery" component={Gallery} />
+            <Route exact path="/tutorial" component={Tutorial}/>
         </Switch>
 
 );
