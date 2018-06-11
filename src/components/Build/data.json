@@ -5,18 +5,25 @@
   },
   "guitar": {
     "id": 1,
-    "name": "guitar"
+    "name": "guitar",
+    "urlaudio": "sounds/guitar.ogg"
+    
   },
   "ukelele": {
     "id": 2,
-    "name": "ukelele"
+    "name": "ukelele",
+    "urlaudio": "sounds/ukulele.ogg"
+    
   },
   "violin": {
     "id": 3,
-    "name": "violin"
+    "name": "violin",
+    "urlaudio": "sounds/violin.ogg"
+    
   },
   "bajo": {
     "id": 4,
-    "name": "bajo"
+    "name": "bass",
+    "urlaudio": "sounds/bass.ogg"
   }
 }

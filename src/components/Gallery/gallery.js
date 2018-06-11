@@ -54,6 +54,7 @@ class App extends React.Component {
   }
   render() {
     return (
+      <section className="banner">
       <div class="container">
       <br/>
       <h1>Gallery</h1>
@@ -68,6 +69,7 @@ class App extends React.Component {
         />
         <br/>
       </div>
+      </section>
     )
   }
   

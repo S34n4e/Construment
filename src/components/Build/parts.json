@@ -6,7 +6,7 @@
       "part": "",
       "price": 0,
       "color": "",
-      "src": "images/parts/.png"
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaAmarillo.png"
     },
     "1": {
       "id": "1",
@@ -14,15 +14,15 @@
       "part": "body",
       "price": 150,
       "color": "brown",
-      "src": "images/parts/guitar.png"
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuerpo/m1CuerpoCafe.png"
     },
     "2": {
       "id": "2",
       "instrument": "guitar",
       "part": "body",
       "price": 160,
-      "color": "brown",
-      "src": "images/parts/guitar.png"
+      "color": "yellow",
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuerpo/m1CuerpoAmarillo.png"
     },
     "3": {
       "id": "3",
@@ -30,7 +30,7 @@
       "part": "neck",
       "price": 130,
       "color": "brown",
-      "src": "images/parts/guitar.png"
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuello/Cuello.png"
     },
     "4": {
       "id": "4",
@@ -38,7 +38,7 @@
       "part": "neck",
       "price": 140,
       "color": "brown",
-      "src": "images/parts/guitar.png"
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuello/Cuello.png"
     },
     "5": {
       "id": "5",
@@ -46,15 +46,15 @@
       "part": "peg",
       "price": 120,
       "color": "brown",
-      "src": "images/parts/guitar.png"
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaCafe.png"
     },
     "6": {
       "id": "6",
       "instrument": "guitar",
       "part": "peg",
       "price": 110,
-      "color": "brown",
-      "src": "images/parts/guitar.png"
+      "color": "yellow",
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaAmarillo.png"
     },
     "7": {},
     "8": {},

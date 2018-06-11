@@ -83,7 +83,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #666;
+		color: white;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -994,7 +994,7 @@
 
 /* Banner */
 
-	#banner {
+	.banner {
 		background: url("images/overlay.png"), url("../images/banner.jpg");
 		background-position: center;
 		background-repeat: no-repeat;
@@ -1004,7 +1004,7 @@
 		text-align: center;
 	}
 
-		#banner h2 {
+		.banner h2 {
 			color: #ffffff;
 			font-size: 3em;
 			line-height: 1em;
@@ -1012,22 +1012,22 @@
 			padding: 0;
 		}
 
-		#banner p {
+		.banner p {
 			font-size: 1.5em;
 			margin: 1.5em 0 0 0;
 		}
 
-		#banner .actions {
+		.banner .actions {
 			margin: 3em 0 0 0;
 		}
 
-		#banner .button {
+		.banner .button {
 			background-color: transparent;
 			border: 1px solid #ffffff;
 			font-weight: 300;
 		}
 
-			#banner .button:hover {
+			.banner .button:hover {
 				background-color: rgba(255, 255, 255, 0.2);
 			}
 
@@ -1128,7 +1128,49 @@
 					padding-left: 0;
 				}
 				
+.accordion {
+    background-color: lightgreen;
+    opacity: 0.6;
+    color: #444;
+    cursor: pointer;
+    padding: 2px;
+    width: 100%;
+    border-style: rounded;
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+}
 
+.active, .accordion:hover {
+    background-color: darkgreen;
+    color: white;
+}
 
+.panel {
+    padding: 0 5px;
+    background-color: beige;
+    opacity: 0.8;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
+canvas {
+	background-color: white;
+	opacity: 0.7;
+}
 
+.onHover:hover {
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.item:hover {
+    text-shadow: 2px 2px 10px white;
+}

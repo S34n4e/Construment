@@ -14,6 +14,7 @@ export default () => (
 
       
       <div>
+      <section className="banner">
       <br/>
       <h1>Tutorial</h1>
       <div className="container">
@@ -46,7 +47,7 @@ export default () => (
                 
               
       </div>
-      
+      </section>
       </div>
       
       

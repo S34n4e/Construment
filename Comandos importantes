@@ -22,7 +22,7 @@ Crear hosting en Heroku para deploy desde cero es (importante primero tener una 
 ---------------------------------------------
 
 |--------------------------------------------------------------
-|Subir modificaciones a heruko una vez que y fue configurado
+|Subir modificaciones a heruko una vez creado y fue configurado
 |--------------------------------------------------------------
 |   git add .               | //Agrega los archivos del proyecto para subirlos 
 |   git commit -m "mensaje" | //Confirma los cambios

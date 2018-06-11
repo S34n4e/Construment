@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 export default () => (
   
  <div>
- <section id="banner">
+ <section className="banner">
  <div>
 				<p>We are a page that is growing at small steps, please be patient, we're doing what we can</p>
 				<ul className="actions">

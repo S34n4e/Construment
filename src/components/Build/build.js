@@ -10,59 +10,65 @@ const data = require('./data.json');
 function isGuitar() {
     data.none.id = data.guitar.id;
     data.none.name = data.guitar.name;
+    data.none.urlaudio = data.guitar.urlaudio;
      console.log("I got: " + data.none.id + " " + data.none.name);
 }
 
 function isUkelele() {
     data.none.id = data.ukelele.id;
     data.none.name = data.ukelele.name;
+    data.none.urlaudio = data.ukelele.urlaudio;
      console.log("I got: " + data.none.id + " " + data.none.name);
 }
 
 function isViolin() {
     data.none.id = data.violin.id;
     data.none.name = data.violin.name;
+    data.none.urlaudio = data.violin.urlaudio;
      console.log("I got: " + data.none.id + " " + data.none.name);
 }
 
 function isBajo() {
     data.none.id = data.bajo.id;
     data.none.name = data.bajo.name;
+    data.none.urlaudio = data.bajo.urlaudio;
      console.log("I got: " + data.none.id + " " + data.none.name);
 }
 
 export default () => (
-    
+<section className="banner">
 <div className="container">
 <div>
-<br/><br/><br/>
-<h1>Select an instrument</h1>
+<h1 className="onHover" >Select an instrument</h1>
 
-<div class="grid-container">
-  <div class="item1">
+<div className="container">
+<div className="row">
+  <div className="col">
     <li>
         <Link onClick={isGuitar} to="/buildEditor">
-            <img src={LogoGuitarras} alt="prop" height="230" width="230"/>
-            <br/><b>Guitar</b>
+            <img className="item" src={LogoGuitarras} alt="prop" height="230" width="230"/>
+            <br/>
         </Link>
     </li>
   </div>
   
-  <div class="item2"><li><Link onClick={isUkelele} to="/buildEditor">
-  <img src={LogoUkuleles} alt="prop" height="230" width="230"/>
-  <br/><b>Ukulele</b></Link></li></div>  
-
-  <div class="item3"><li><Link onClick={isViolin} to="/buildEditor">
-  <img src={LogoViolines} alt="prop" height="230" width="230"/>
-  <br/><b>Violin</b></Link></li></div>
-
-  <div class="item4"><li><Link onClick={isBajo} to="/buildEditor">
-  <img src={LogoBajos} alt="prop" height="230" width="230"/>
-  <br/><b>Bass</b></Link></li></div>  
+  <div className="col"><li><Link onClick={isUkelele} to="/buildEditor">
+  <img className="item" src={LogoUkuleles} alt="prop" height="230" width="230"/>
+  <br/></Link></li></div>  
 </div>
 
-</div>
-</div>
+<div className="row">
+  <div className="col"><li><Link onClick={isViolin} to="/buildEditor">
+  <img className="item" src={LogoViolines} alt="prop" height="230" width="230"/>
+  <br/></Link></li></div>
 
+  <div className="col"><li><Link onClick={isBajo} to="/buildEditor">
+  <img className="item" src={LogoBajos} alt="prop" height="230" width="230"/>
+  <br/></Link></li></div>  
+</div>
+</div>
+</div>
+</div>
+</section>
 );
 
