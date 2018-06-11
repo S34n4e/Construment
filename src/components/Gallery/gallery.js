@@ -8,7 +8,14 @@ import Lightbox from 'react-images';
   const photos = [  ];
   const data = require('./gallery.json');
   
-
+ //var imagen;// = new Object();
+    for (var i in data) {
+        var imagen = {};//new Object();
+        imagen.src = data[i].src;
+        imagen.width = 3;
+        imagen.height = 3;
+        photos.push(imagen);
+    }
 
 class App extends React.Component {
   constructor() {
@@ -19,14 +26,7 @@ class App extends React.Component {
     this.gotoNext = this.gotoNext.bind(this);
     this.gotoPrevious = this.gotoPrevious.bind(this);
     
-    //var imagen;// = new Object();
-    for (var i in data) {
-        var imagen = {};//new Object();
-        imagen.src = data[i].src;
-        imagen.width = 3;
-        imagen.height = 3;
-        photos.push(imagen);
-    }
+   
      
     
   }
