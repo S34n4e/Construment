@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom"
-import logoletras from "../Multimedia/Logos/Logo_Menu_letras.svg";
+import logoletras from "../Multimedia/Logos/Logo_Menu_letras.png";
 import "../ResizeImagen.css"
 import "./Menu.css";
 
