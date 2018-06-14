@@ -4,6 +4,7 @@ import LogoGuitarras from "../../Multimedia/guitar.png";
 import LogoViolines from "../../Multimedia/violin.png";
 import LogoBajos from "../../Multimedia/bass.png";
 import LogoUkuleles from "../../Multimedia/ukulele.png";
+import "../../ResizeImagen.css";
 
 const data = require('./data.json');
 
@@ -36,6 +37,7 @@ function isBajo() {
 }
 
 export default () => (
+
 <section className="banner">
 <div className="container">
 <div>
@@ -46,29 +48,30 @@ export default () => (
   <div className="col">
     <li>
         <Link onClick={isGuitar} to="/buildEditor">
-            <img className="item" src={LogoGuitarras} alt="prop" height="230" width="230"/>
+            <img className="item redondeaBordesPrebuider" src={LogoGuitarras} alt="prop" height="230" width="230"/>
             <br/>
         </Link>
     </li>
   </div>
   
   <div className="col"><li><Link onClick={isUkelele} to="/buildEditor">
-  <img className="item" src={LogoUkuleles} alt="prop" height="230" width="230"/>
+  <img className="item redondeaBordesPrebuider" src={LogoUkuleles} alt="prop" height="230" width="230"/>
   <br/></Link></li></div>  
 </div>
 
 <div className="row">
   <div className="col"><li><Link onClick={isViolin} to="/buildEditor">
-  <img className="item" src={LogoViolines} alt="prop" height="230" width="230"/>
+  <img className="item redondeaBordesPrebuider" src={LogoViolines} alt="prop" height="230" width="230"/>
   <br/></Link></li></div>
 
   <div className="col"><li><Link onClick={isBajo} to="/buildEditor">
-  <img className="item" src={LogoBajos} alt="prop" height="230" width="230"/>
+  <img className="item redondeaBordesPrebuider" src={LogoBajos} alt="prop" height="230" width="230"/>
   <br/></Link></li></div>  
 </div>
 </div>
 </div>
 </div>
 </section>
+
 );
 

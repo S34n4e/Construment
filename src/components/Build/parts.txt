@@ -1,54 +1,66 @@
-ids
+parts
   0
-    id = 
+    id = 0
     instrument = 
     part = 
     price n = 
     color = 
-    src = images/parts/.png
+    src = images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaAmarillo.png
   1
     id = 1
     instrument = guitar
     part = body
     price n = 150
     color = brown
-    src = images/parts/guitar.png
+    src = images/Partes_instrumentos/Guitarras/Modelo1/Cuerpo/m1CuerpoCafe.png
   2
     id = 2
     instrument = guitar
     part = body
     price n = 160
-    color = brown
-    src = images/parts/guitar.png
+    color = yellow
+    src = images/Partes_instrumentos/Guitarras/Modelo1/Cuerpo/m1CuerpoAmarillo.png
   3
     id = 3
     instrument = guitar
-    part = neck
-    price n = 130
-    color = brown
-    src = images/parts/guitar.png
+    part = body
+    price n = 170
+    color = red
+    src = images/Partes_instrumentos/Guitarras/Modelo1/Cuerpo/m1CuerpoRojo.png
   4
     id = 4
     instrument = guitar
     part = neck
     price n = 140
     color = brown
-    src = images/parts/guitar.png
+    src = images/Partes_instrumentos/Guitarras/Modelo1/Cuello/Cuello.png
   5
     id = 5
     instrument = guitar
     part = peg
     price n = 120
     color = brown
-    src = images/parts/guitar.png
+    src = images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaCafe.png
   6
     id = 6
     instrument = guitar
     part = peg
     price n = 110
     color = brown
-    src = images/parts/guitar.png
+    src = images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaAmarillo.png
   7
+    id = 7
+    instrument = guitar
+    part = peg
+    price n = 100
+    color = red
+    src = images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaRojo.png
   8
+    id = 8
+    instrument = guitar
+    part = peg
+    price n = 100
+    color = blue
+    src = images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaAzul.png
   9
   10

@@ -10,11 +10,8 @@ var x2 = 200; var y2 = 40;
 var x3 = 200; var y3 = 0;
 var canvas; var ctx; 
 var partEditing = "body";
-var imgBody; var imgNeck; var imgPeg;
+var imgBody; var imgNeck; var imgPeg; var indentsBody = []; var indentsNeck = []; var indentsPeg = [];
 
-function showSomething() {
-
-}
 
 function leftPanel(){
     acc = document.getElementsByClassName("accordion");
@@ -38,6 +35,9 @@ function audioinstrumento(){
      audio.play();
 }
 
+function clearContent(){
+    indentsBody = [];  indentsNeck = [];  indentsPeg = [];
+}
 
 function start() {
      canvas = document.getElementById("myCanvas");
@@ -47,13 +47,12 @@ function start() {
      imgPeg = document.getElementById("imgPeg");
         if (canvas.getContext) {
           ctx = canvas.getContext("2d");
- 
           window.addEventListener('resize', resizeCanvas, false);
           window.addEventListener('orientationchange', resizeCanvas, false);
           resizeCanvas();
-          x1 = canvas.width/2 - imgBody.naturalWidth/4;
-            x2 = canvas.width/2 - imgNeck.naturalWidth/4;
-            x3 = canvas.width/2 - imgPeg.naturalWidth/4;
+        x1 = canvas.width/2 - imgBody.naturalWidth/4;
+        x2 = canvas.width/2 - imgNeck.naturalWidth/4;
+        x3 = canvas.width/2 - imgPeg.naturalWidth/4;
           ctx.drawImage(imgBody, x1, y1, imgBody.naturalWidth/2, imgBody.naturalHeight/2);
           ctx.drawImage(imgNeck, x2, y2, imgNeck.naturalWidth/2, imgNeck.naturalHeight/2);
           ctx.drawImage(imgPeg, x3, y3, imgPeg.naturalWidth/2, imgPeg.naturalHeight/2);
@@ -89,7 +88,6 @@ function addImage() {
     ctx.drawImage(imgBody, x1, y1, imgBody.naturalWidth/2, imgBody.naturalHeight/2);
     ctx.drawImage(imgNeck, x2, y2, imgNeck.naturalWidth/2, imgNeck.naturalHeight/2);
     ctx.drawImage(imgPeg, x3, y3, imgPeg.naturalWidth/2, imgPeg.naturalHeight/2);
-    showSomething();
 }
 
 function upX(){
@@ -177,9 +175,40 @@ function changeImg(num, instrum){
     addImage();
 }
 
+function elements() {
+    
+    if(data.none.name === "guitar" || data.none.name === "none"){
+    indentsBody.push(<img alt="body" src={parts.parts[1].src} width="74" height="106" onClick={function(event){changeImg(1, "body")}}></img>);
+    indentsBody.push(<img alt="body" src={parts.parts[2].src} width="74" height="106" onClick={function(event){changeImg(2, "body")}}></img>);
+    indentsBody.push(<img alt="body" src={parts.parts[3].src} width="74" height="106" onClick={function(event){changeImg(3, "body")}}></img>);
+    
+    indentsNeck.push(<img alt="neck" src={parts.parts[4].src} width="30" height="90" onClick={function(event){changeImg(4, "neck")}}></img>)
+    
+    indentsPeg.push(<img alt="peg" src={parts.parts[5].src} width="40" height="80" onClick={function(event){changeImg(5, "peg")}}></img>);
+    indentsPeg.push(<img alt="peg" src={parts.parts[6].src} width="40" height="80" onClick={function(event){changeImg(6, "peg")}}></img>);
+    indentsPeg.push(<img alt="peg" src={parts.parts[7].src} width="40" height="80" onClick={function(event){changeImg(7, "peg")}}></img>);
+    indentsPeg.push(<img alt="peg" src={parts.parts[8].src} width="40" height="80" onClick={function(event){changeImg(8, "peg")}}></img>);
+    console.log("indents");
+    }
+}
+
+function downloadImage(){
+    var button = document.getElementById('btn-download');
+    button.addEventListener('click', function (e) {
+    var dataURL = canvas.toDataURL('image/png');
+    button.href = dataURL;
+});
+}
+
 class CanvasBuild extends Component {
 componentDidMount() {
-start();
+    start();
+    downloadImage();
+    clearContent();
+}
+
+componentWillMount() {
+    elements();
 }
 
     render(){
@@ -188,32 +217,40 @@ start();
         <div>
         <h1>Build {data.none.name}</h1>
             <div className="row">
-
             <div className="col-xs-12 col-md-5">
                 <button className="accordion">
                 <i class="fa fa-chevron-circle-down"></i> Body</button>
                 <div className="panel">
-                    <img alt="body" src={parts.parts[1].src} width="74" height="106" onClick={function(event){ changeImg(1, "body");}}></img>
-                    <img alt="body" src={parts.parts[2].src} width="74" height="106" onClick={function(event){ changeImg(2, "body");}}></img>
+                
+                {indentsBody}
+                
                 </div>
                 <button className="accordion">
                 <i class="fa fa-chevron-circle-down"></i> Neck</button>
                 <div className="panel">
-                    <img alt="neck" src={parts.parts[3].src} width="20" height="100" onClick={function(event){ changeImg(3, "neck");}}></img>
+                
+                {indentsNeck}
+                
                 </div>
                 <button className="accordion">
                 <i class="fa fa-chevron-circle-down"></i> Peg</button>
                 <div className="panel">
-                    <img alt="peg" src={parts.parts[5].src} width="60" height="130" onClick={function(event){ changeImg(5, "peg");}}></img>
-                    <img alt="peg" src={parts.parts[6].src} width="60" height="130" onClick={function(event){ changeImg(6, "peg");}}></img>
+                
+                {indentsPeg}
+                
                 </div>
+                <a href="" id="btn-download" download="instrument-construment.png"><button className="accordion"><i class="fa fa-floppy-o"></i> Download</button>
+                <div className="panel">
+                </div>
+                </a>
             </div>
 
             <div className="col-xs-12 col-md-7">
 
-                <canvas id="myCanvas" width="505" height="280" style={canvasStyle}></canvas>
+                
+                <canvas id="myCanvas" width="505" height="280" style={canvasStyle}> </canvas>
                 <img style={hideStyle} id="imgBody" width="50%" height="50%" src={parts.parts[1].src} alt="The Scream"/>
-                <img style={hideStyle} id="imgNeck" width="50%" height="50%" src={parts.parts[3].src} alt="The Scream"/>
+                <img style={hideStyle} id="imgNeck" width="50%" height="50%" src={parts.parts[4].src} alt="The Scream"/>
                 <img style={hideStyle} id="imgPeg" width="50%" height="50%" src={parts.parts[5].src} alt="The Scream"/>
                 
                 <br/>

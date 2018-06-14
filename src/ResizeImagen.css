@@ -3,9 +3,13 @@
 }
 
 .guitarralogomenuletras{
-   width:30%;
+   width:24%;
 }
 
 .logoreactAbout{
    width:100%;
+}
+
+.redondeaBordesPrebuider{
+    border-radius: 15px;
 }

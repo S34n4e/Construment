@@ -1,7 +1,7 @@
 {
   "parts": {
     "0": {
-      "id": "",
+      "id": "0",
       "instrument": "",
       "part": "",
       "price": 0,
@@ -27,10 +27,10 @@
     "3": {
       "id": "3",
       "instrument": "guitar",
-      "part": "neck",
-      "price": 130,
-      "color": "brown",
-      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuello/Cuello.png"
+      "part": "body",
+      "price": 170,
+      "color": "red",
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuerpo/m1CuerpoRojo.png"
     },
     "4": {
       "id": "4",
@@ -53,11 +53,25 @@
       "instrument": "guitar",
       "part": "peg",
       "price": 110,
-      "color": "yellow",
+      "color": "brown",
       "src": "images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaAmarillo.png"
     },
-    "7": {},
-    "8": {},
+    "7": {
+      "id": "7",
+      "instrument": "guitar",
+      "part": "peg",
+      "price": 100,
+      "color": "red",
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaRojo.png"
+    },
+    "8": {
+      "id": "8",
+      "instrument": "guitar",
+      "part": "peg",
+      "price": 100,
+      "color": "blue",
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaAzul.png"
+    },
     "9": {},
     "10": {}
   }

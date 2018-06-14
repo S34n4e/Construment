@@ -8,8 +8,8 @@ class index  extends Component{
         
         return(
             
-            <div>
-            
+            <div className="wrapper w3-theme-l5">
+
             
                 <div className="w3-container w3-padding-64 w3-theme-l5">
                   <div className="w3-row">
@@ -37,7 +37,6 @@ class index  extends Component{
                   </div>
                 </div>            
             
-                
             </div>
         )
         
