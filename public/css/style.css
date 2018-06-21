@@ -536,26 +536,6 @@
 
 /* List */
 
-	ol {
-		list-style: decimal;
-		margin: 0 0 2em 0;
-		padding-left: 1.25em;
-	}
-
-		ol li {
-			padding-left: 0.25em;
-		}
-
-	ul {
-		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
-	}
-
-		ul li {
-			padding-left: 0.5em;
-		}
-
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
@@ -1002,6 +982,7 @@
 
 	.banner {
 		background: url("images/overlay.png"), url("../images/banner.jpg");
+		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1162,8 +1143,7 @@
 }
 
 canvas {
-	background-color: white;
-	opacity: 0.7;
+
 }
 
 .onHover:hover {
@@ -1178,4 +1158,9 @@ img:hover {
 
 .item:hover {
     text-shadow: 2px 2px 10px white;
+}
+
+.awa {
+	background-color: white;
+	opacity: 0.8;
 }

@@ -41,7 +41,7 @@ export default () => (
                 </Carousel>
             </div>
   </div>
-</section>       
+</section>
  </div>
  
 
