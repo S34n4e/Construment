@@ -80,6 +80,31 @@
       "color": "brown",
       "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuello/m1cuellometal.png"
     },
-    "10": {}
+    "10": {
+      "id": "10",
+      "instrument": "violin",
+      "part": "body",
+      "price": 100,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Violines/Modelo1/cuerpo.png"
+    },
+    "11": {
+      "id": "11",
+      "instrument": "violin",
+      "part": "neck",
+      "price": 100,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Violines/Modelo1/cuello.png"
+    },
+    "12": {
+      "id": "12",
+      "instrument": "violin",
+      "part": "peg",
+      "price": 100,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Violines/Modelo1/peg.png"
+    },
+    "13": {},
+    "14": {}
   }
 }

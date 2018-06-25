@@ -66,6 +66,12 @@ function elements() {
     indentsPeg.push(<img alt="peg" src={parts.parts[8].src} width="80" height="40" onClick={function(event){changeImg(8, "peg")}}></img>);
     indentsNeck.push(<img alt="neck" src={parts.parts[9].src} width="90" height="30" onClick={function(event){changeImg(9, "neck")}}></img>);
     }
+    if(data.none.name === "violin" || data.none.name === "none"){
+    indentsBody.push(<img alt="body" src={parts.parts[10].src} width="106" height="74" onClick={function(event){changeImg(10, "body")}}></img>);
+    indentsNeck.push(<img alt="neck" src={parts.parts[11].src} width="90" height="30" onClick={function(event){changeImg(11, "neck")}}></img>);
+    indentsPeg.push(<img alt="peg" src={parts.parts[12].src} width="80" height="40" onClick={function(event){changeImg(12, "peg")}}></img>);
+
+    }
 }
 
     function startKonva(){
