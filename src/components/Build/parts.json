@@ -14,23 +14,26 @@
       "part": "body",
       "price": 150,
       "color": "brown",
-      "src": "images/Partes_instrumentos/Guitarras/Modelo2/m2Cuerpo.png"
+      "src": "images/Partes_instrumentos/Guitarras/Modelo2/m2Cuerpo.png",
+      "urlaudio":"sounds/rockguitarsound.ogg"
     },
     "2": {
       "id": "2",
       "instrument": "guitar",
       "part": "body",
-      "price": 160,
+      "price": 170,
       "color": "yellow",
-      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuerpo/m1CuerpoCafe.png"
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuerpo/m1CuerpoCafe.png",
+      "urlaudio":"sounds/acusticguitarsound.ogg"
     },
     "3": {
       "id": "3",
       "instrument": "guitar",
       "part": "body",
-      "price": 170,
+      "price": 190,
       "color": "red",
-      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuerpo/m1cuerpometal.png"
+      "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuerpo/m1cuerpometal.png",
+      "urlaudio":"sounds/metalguitarsound.ogg"
     },
     "4": {
       "id": "4",
@@ -44,7 +47,7 @@
       "id": "5",
       "instrument": "guitar",
       "part": "peg",
-      "price": 120,
+      "price": 100,
       "color": "brown",
       "src": "images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1ClavijaCafe.png"
     },
@@ -60,7 +63,7 @@
       "id": "7",
       "instrument": "guitar",
       "part": "peg",
-      "price": 100,
+      "price": 110,
       "color": "red",
       "src": "images/Partes_instrumentos/Guitarras/Modelo2/m2Clavija.png"
     },
@@ -68,7 +71,7 @@
       "id": "8",
       "instrument": "guitar",
       "part": "peg",
-      "price": 100,
+      "price": 120,
       "color": "blue",
       "src": "images/Partes_instrumentos/Guitarras/Modelo1/Clavijero/m1clavijametal.png"
     },
@@ -76,7 +79,7 @@
       "id": "9",
       "instrument": "guitar",
       "part": "neck",
-      "price": 150,
+      "price": 130,
       "color": "brown",
       "src": "images/Partes_instrumentos/Guitarras/Modelo1/Cuello/m1cuellometal.png"
     },
@@ -84,15 +87,16 @@
       "id": "10",
       "instrument": "violin",
       "part": "body",
-      "price": 100,
+      "price": 150,
       "color": "brown",
-      "src": "images/Partes_instrumentos/Violines/Modelo1/cuerpo.png"
+      "src": "images/Partes_instrumentos/Violines/Modelo1/cuerpo.png",
+      "urlaudio":"sounds/violinclassicsound.ogg"
     },
     "11": {
       "id": "11",
       "instrument": "violin",
       "part": "neck",
-      "price": 100,
+      "price": 110,
       "color": "brown",
       "src": "images/Partes_instrumentos/Violines/Modelo1/cuello.png"
     },
@@ -104,7 +108,84 @@
       "color": "brown",
       "src": "images/Partes_instrumentos/Violines/Modelo1/peg.png"
     },
-    "13": {},
-    "14": {}
+    "13": {
+      "id": "13",
+      "instrument": "ukulele",
+      "part": "body",
+      "price": 140,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Ukuleles/modelo 1/cuerpo 1.png",
+      "urlaudio":"sounds/classicukulelesound.ogg"
+    },
+    "14": {
+      "id": "14",
+      "instrument": "ukulele",
+      "part": "body",
+      "price": 160,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Ukuleles/modelo 2/cuerpo 2.png",
+      "urlaudio":"sounds/classicukulelesound.ogg"      
+    },
+    "15": {
+      "id": "15",
+      "instrument": "ukulele",
+      "part": "body",
+      "price": 170,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Ukuleles/modelo 3/cuerpo 3.png",
+      "urlaudio":"sounds/classicukulelesound.ogg"      
+    },
+    "16": {
+      "id": "16",
+      "instrument": "ukulele",
+      "part": "neck",
+      "price": 120,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Ukuleles/modelo 1/cuello 1.png"
+    },
+    "17": {
+      "id": "17",
+      "instrument": "ukulele",
+      "part": "neck",
+      "price": 130,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Ukuleles/modelo 2/cuello 2.png"
+    },
+    "18": {
+      "id": "18",
+      "instrument": "ukulele",
+      "part": "neck",
+      "price": 140,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Ukuleles/modelo 3/cuello 3.png"
+    },
+    "19": {
+      "id": "19",
+      "instrument": "ukulele",
+      "part": "peg",
+      "price": 90,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Ukuleles/modelo 1/peg 1.png"
+    },
+    "20": {
+      "id": "20",
+      "instrument": "ukulele",
+      "part": "peg",
+      "price": 110,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Ukuleles/modelo 2/peg 2.png"
+    },
+    "21": {
+      "id": "21",
+      "instrument": "ukulele",
+      "part": "peg",
+      "price": 120,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Ukuleles/modelo 3/peg 3.png"
+    },
+    "22": {},
+    "23": {},
+    "24": {},
+    "25": {}
   }
 }

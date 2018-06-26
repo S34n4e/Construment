@@ -1,8 +1,9 @@
 import React, { Component }	from 'react';
 
 const data = require('./data.json'); const parts = require('./parts.json');
-var acc = document.getElementsByClassName("accordion"); var i; var hideStyle = {display:'none'};
-var imgBody; var imgNeck; var imgPeg; var indentsBody = []; var indentsNeck = []; var indentsPeg = [];
+var acc = document.getElementsByClassName("accordion"); var i; var hideStyle = {display:'none'}; 
+var priceBody = 0; var priceNeck = 0; var pricePeg = 0; var price = 0;
+var imgBody; var imgNeck; var imgPeg; var sound; var indentsBody = []; var indentsNeck = []; var indentsPeg = [];
 
 
 function leftPanel(){
@@ -20,10 +21,10 @@ for (i = 0; i < acc.length; i++) {
 }
 }
 
-function audioinstrumento(){
+function audioinstrumento(num){
     /*Función para reproducir el audio de los instrumentos, los lee de data.json*/
      var audio;
-     audio = new Audio(data.none.urlaudio);
+     audio = new Audio(parts.parts[num].urlaudio);
      audio.play();
 }
 
@@ -32,6 +33,27 @@ function clearContent(){
 }
 
 function start() {
+    switch(data.none.name){
+        case "guitar":
+            changeImg(1, "body");
+            changeImg(4, "neck");
+            changeImg(5, "peg");
+            break;
+        case "ukulele":
+            changeImg(13, "body");
+            changeImg(16, "neck");
+            changeImg(19, "peg");            
+            break;
+        case "violin":
+            changeImg(10, "body");
+            changeImg(11, "neck");
+            changeImg(12, "peg");
+        case "bass":
+            
+            break;
+        default:
+            break;
+    }
     imgBody = document.getElementById("imgBody");
     imgNeck = document.getElementById("imgNeck");
     imgPeg = document.getElementById("imgPeg");
@@ -42,20 +64,26 @@ function changeImg(num, instrum){
     switch(instrum){
         case "body":
             document.getElementById("imgBody").src=parts.parts[num].src;
+            priceBody = parts.parts[num].price;
+            sound=num;
             break;
         case "neck":
             document.getElementById("imgNeck").src=parts.parts[num].src;
+            priceNeck = parts.parts[num].price;
             break;
         case "peg":
             document.getElementById("imgPeg").src=parts.parts[num].src;
+            pricePeg = parts.parts[num].price;
             break;
         default:
             break;
     }
+    setPrice(num);
 }
 
 function elements() {
     if(data.none.name === "guitar" || data.none.name === "none"){
+    
     indentsBody.push(<img alt="body" src={parts.parts[1].src} width="106" height="74" onClick={function(event){changeImg(1, "body")}}></img>);
     indentsBody.push(<img alt="body" src={parts.parts[2].src} width="106" height="74" onClick={function(event){changeImg(2, "body")}}></img>);
     indentsBody.push(<img alt="body" src={parts.parts[3].src} width="106" height="74" onClick={function(event){changeImg(3, "body")}}></img>);
@@ -66,11 +94,22 @@ function elements() {
     indentsPeg.push(<img alt="peg" src={parts.parts[8].src} width="80" height="40" onClick={function(event){changeImg(8, "peg")}}></img>);
     indentsNeck.push(<img alt="neck" src={parts.parts[9].src} width="90" height="30" onClick={function(event){changeImg(9, "neck")}}></img>);
     }
-    if(data.none.name === "violin" || data.none.name === "none"){
+    if(data.none.name === "violin") {
     indentsBody.push(<img alt="body" src={parts.parts[10].src} width="106" height="74" onClick={function(event){changeImg(10, "body")}}></img>);
     indentsNeck.push(<img alt="neck" src={parts.parts[11].src} width="90" height="30" onClick={function(event){changeImg(11, "neck")}}></img>);
     indentsPeg.push(<img alt="peg" src={parts.parts[12].src} width="80" height="40" onClick={function(event){changeImg(12, "peg")}}></img>);
-
+    }
+    
+    if(data.none.name === "ukulele") {
+    indentsBody.push(<img alt="body" src={parts.parts[13].src} width="106" height="74" onClick={function(event){changeImg(13, "body")}}></img>);
+    indentsBody.push(<img alt="body" src={parts.parts[14].src} width="106" height="74" onClick={function(event){changeImg(14, "body")}}></img>);
+    indentsBody.push(<img alt="body" src={parts.parts[15].src} width="106" height="74" onClick={function(event){changeImg(15, "body")}}></img>);
+    indentsNeck.push(<img alt="neck" src={parts.parts[16].src} width="90" height="30" onClick={function(event){changeImg(16, "neck")}}></img>);
+    indentsNeck.push(<img alt="neck" src={parts.parts[17].src} width="90" height="30" onClick={function(event){changeImg(17, "neck")}}></img>);
+    indentsNeck.push(<img alt="neck" src={parts.parts[18].src} width="90" height="30" onClick={function(event){changeImg(18, "neck")}}></img>);
+    indentsPeg.push(<img alt="peg" src={parts.parts[19].src} width="80" height="40" onClick={function(event){changeImg(19, "peg")}}></img>);
+    indentsPeg.push(<img alt="peg" src={parts.parts[20].src} width="80" height="40" onClick={function(event){changeImg(20, "peg")}}></img>);
+    indentsPeg.push(<img alt="peg" src={parts.parts[21].src} width="80" height="40" onClick={function(event){changeImg(21, "peg")}}></img>);
     }
 }
 
@@ -88,7 +127,7 @@ function elements() {
         // darth vader
         var bodyImg2 = new window.Konva.Image({
             image: imgBody,
-            x: 300,
+            x: 240,
             y: stage.getHeight() / 2 - imgBody.height / 4,
             width: imgBody.width/2,
             height: imgBody.height/2,
@@ -103,7 +142,7 @@ function elements() {
         });
         var neckImg2 = new window.Konva.Image({
             image: imgNeck,
-            x: 170,
+            x: 110,
             y: stage.getHeight() / 2 - imgNeck.height / 4,
             width: imgNeck.width/2,
             height: imgNeck.height/2,
@@ -118,7 +157,7 @@ function elements() {
         });
         var pegImg2 = new window.Konva.Image({
             image: imgPeg,
-            x: 110,
+            x: 50,
             y: stage.getHeight() / 2 - imgPeg.height / 4,
             width: imgPeg.width/2,
             height: imgPeg.height/2,
@@ -209,6 +248,14 @@ function elements() {
     imageObj3.src = imgBody.src;
         
     }
+    
+    function setPrice(num){
+        price = priceBody + priceNeck + pricePeg;
+        document.getElementById("p1").innerHTML = "Body $" + priceBody;
+        document.getElementById("p2").innerHTML = "Neck $" + priceNeck;
+        document.getElementById("p3").innerHTML = "Peg $" + pricePeg;
+        document.getElementById("p4").innerHTML = "Total $" + price;
+    }
 
 
 class CanvasBuild extends Component {
@@ -216,6 +263,7 @@ componentDidMount() {
     start();
     clearContent();
     startKonva();
+    
 }
 
 componentWillMount() {
@@ -232,32 +280,35 @@ componentWillMount() {
                 <button className="accordion">
                 <i className="fa fa-chevron-down"></i> Body</button>
                 <div id="changeBody" className="panel">
-
+               
                 {indentsBody}
-
+              
                 </div>
                 <button className="accordion">
                 <i className="fa fa-chevron-down"></i> Neck</button>
                 <div id="changeNeck" className="panel">
-
+              
                 {indentsNeck}
-
+               
                 </div>
                 <button className="accordion">
                 <i className="fa fa-chevron-down"></i> Peg</button>
                 <div id="changePeg" className="panel">
-
+              
                 {indentsPeg}
-
+             
                 </div>
                 <button id="btn-download" className="accordion"><i className="fa fa-download"></i> Download</button>
                 <div className="panel">
                 </div>
-                <button onClick={()=>{audioinstrumento()}} className="accordion" > <i className="fa fa-music"></i> Play {data.none.name}</button>
+                <button onClick={()=>{audioinstrumento(sound)}} className="accordion" > <i className="fa fa-music"></i> Play {data.none.name}</button>
                 <div className="panel">
                 </div>
+                <kbd id="p1">Price:</kbd>
+                <kbd id="p2">Price:</kbd>
+                <kbd id="p3">Price:</kbd>
+                <kbd id="p4">Price:</kbd>
             </div>
-
             <div className="col-xs-12 col-md-7 ">
             <div id="container" className="awa"></div>
             <div id="controls">

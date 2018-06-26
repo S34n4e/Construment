@@ -1164,3 +1164,12 @@ img:hover {
 	background-color: white;
 	opacity: 0.8;
 }
+
+kbd {
+	transition: 0.8s;
+}
+
+kbd:hover {
+	background-color: white;
+	color: black;
+}

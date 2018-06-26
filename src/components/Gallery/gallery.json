@@ -1,26 +1,26 @@
 {
   "1": {
-    "src": "https://source.unsplash.com/qDkso9nvCg0/600x799"
+    "src": "/images/violincafe.png"
   },
   "2": {
-    "src": "https://source.unsplash.com/iecJiKe_RNg/600x799"
+    "src": "/images/guitarraRosa.png"
   },
   "3": {
-    "src": "https://source.unsplash.com/epcsn8Ed8kY/600x799"
+    "src": "/images/guitarramorada.png"
   },
   "4": {
-    "src": "https://source.unsplash.com/zh7GEuORbUw/600x799"
+    "src": "/images/guitarraverde2.png"
   },
   "5": {
-    "src": "/images/img1.jpg"
+    "src": "/images/guitarraazul.png"
   },
   "6": {
-    "src": "/images/img2.jpg"
+    "src": "/images/guitarraverde.png"
   },
   "7": {
-    "src": "/images/img3.jpg"
+    "src": "/images/guitarraroja.png"
   },
   "8": {
-    "src": "/images/img4.jpg"
+    "src": "/images/violinmorado.png"
   }
 }
