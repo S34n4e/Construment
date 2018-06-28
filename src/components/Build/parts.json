@@ -183,9 +183,83 @@
       "color": "brown",
       "src": "images/Partes_instrumentos/Ukuleles/modelo 3/peg 3.png"
     },
-    "22": {},
-    "23": {},
-    "24": {},
-    "25": {}
+    "22": {
+      "id": "22",
+      "instrument": "bass",
+      "part": "body",
+      "price": 160,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Bajos/modelo 1/cuerpo 1.png",
+      "urlaudio":"sounds/mutedbasssound.ogg"
+    },
+    "23": {
+      "id": "23",
+      "instrument": "bass",
+      "part": "body",
+      "price": 180,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Bajos/modelo 2/cuerpo 2.png",
+      "urlaudio":"sounds/pickedbasssound.ogg"
+    },
+    "24": {
+      "id": "24",
+      "instrument": "bass",
+      "part": "body",
+      "price": 190,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Bajos/modelo 3/cuerpo 3.png",
+      "urlaudio":"sounds/liverpoolbasssound.ogg"     
+    },
+    "25": {
+      "id": "25",
+      "instrument": "bass",
+      "part": "neck",
+      "price": 120,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Bajos/modelo 1/cuello 1.png"      
+    },
+    "26": {
+      "id": "26",
+      "instrument": "bass",
+      "part": "neck",
+      "price": 140,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Bajos/modelo 2/cuello 2.png"      
+    },
+    "27": {
+      "id": "27",
+      "instrument": "bass",
+      "part": "neck",
+      "price": 150,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Bajos/modelo 3/cuello 3.png"            
+    },
+    "28": {
+      "id": "28",
+      "instrument": "bass",
+      "part": "peg",
+      "price": 110,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Bajos/modelo 1/peg 1.png"       
+    },
+    "29": {
+      "id": "29",
+      "instrument": "bass",
+      "part": "peg",
+      "price": 120,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Bajos/modelo 2/peg 2.png"   
+    },
+    "30": {
+      "id": "30",
+      "instrument": "bass",
+      "part": "peg",
+      "price": 130,
+      "color": "brown",
+      "src": "images/Partes_instrumentos/Bajos/modelo 3/peg 3.png"   
+    },
+    "31": {},
+    "32": {},
+    "33": {}
   }
 }

@@ -48,8 +48,11 @@ function start() {
             changeImg(10, "body");
             changeImg(11, "neck");
             changeImg(12, "peg");
+            break;
         case "bass":
-            
+            changeImg(22, "body");
+            changeImg(25, "neck");
+            changeImg(28, "peg");
             break;
         default:
             break;
@@ -111,6 +114,19 @@ function elements() {
     indentsPeg.push(<img alt="peg" src={parts.parts[20].src} width="80" height="40" onClick={function(event){changeImg(20, "peg")}}></img>);
     indentsPeg.push(<img alt="peg" src={parts.parts[21].src} width="80" height="40" onClick={function(event){changeImg(21, "peg")}}></img>);
     }
+    
+    if(data.none.name === "bass") {
+    indentsBody.push(<img alt="body" src={parts.parts[22].src} width="106" height="74" onClick={function(event){changeImg(22, "body")}}></img>);
+    indentsBody.push(<img alt="body" src={parts.parts[23].src} width="106" height="74" onClick={function(event){changeImg(23, "body")}}></img>);
+    indentsBody.push(<img alt="body" src={parts.parts[24].src} width="106" height="74" onClick={function(event){changeImg(24, "body")}}></img>);
+    indentsNeck.push(<img alt="neck" src={parts.parts[25].src} width="90" height="30" onClick={function(event){changeImg(25, "neck")}}></img>);
+    indentsNeck.push(<img alt="neck" src={parts.parts[26].src} width="90" height="30" onClick={function(event){changeImg(26, "neck")}}></img>);
+    indentsNeck.push(<img alt="neck" src={parts.parts[27].src} width="90" height="30" onClick={function(event){changeImg(27, "neck")}}></img>);
+    indentsPeg.push(<img alt="peg" src={parts.parts[28].src} width="80" height="40" onClick={function(event){changeImg(28, "peg")}}></img>);
+    indentsPeg.push(<img alt="peg" src={parts.parts[29].src} width="80" height="40" onClick={function(event){changeImg(29, "peg")}}></img>);
+    indentsPeg.push(<img alt="peg" src={parts.parts[30].src} width="80" height="40" onClick={function(event){changeImg(30, "peg")}}></img>);
+    }
+    
 }
 
     function startKonva(){
