@@ -10,7 +10,7 @@ export default () => (
  <section className="banner">
  <div>
 				<h1>With Construment...</h1> 
-				<p>you can customize instruments by changing their parts and color!</p>
+				<p>you can customize instruments by changing their parts and colors!</p>
 				<ul className="actions">
 					<li>
 						<Link to="/build" className="button big">Build instrument now!</Link>
@@ -19,26 +19,31 @@ export default () => (
 				<br></br>
 				<div className="container">
                 <Carousel dynamicHeight>
-                  <div>
-                    <img alt="construment guitar" src="/images/img2.jpg" />
-                    <kbd className="legend">Watch our tutorials </kbd>
+                  <div class="embed-container" >
+                    <img alt="construment tutorial video instrument" src="/images/miniaturatutorial.png"/>
+                    <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/s16gsNjqxhg?rel=0" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
                   </div>
                   <div>
-                    <img alt="construment customization" src="/images/img3.jpg" />
+                    <img alt="Create your version" src="/images/valla1.png" />
                     <kbd className="legend">Save it as image </kbd>
                   </div>
                   <div>
-                    <img alt="construment colors" src="/images/img4.jpg" />
+                    <img alt="Imagine" src="/images/valla2.png" />
                     <kbd className="legend">Customize as you can </kbd>
                   </div>
-                  <div>
+                  <div class="embed-container" >
+                    <img alt="construment tutorial video instrument" src="/images/miniaturapromocional.png"/>
+                    <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/Lg0AklxKLzU?rel=0" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
+                  </div>
+                  
+                  {/*<div>
                     <img alt="construment designs" src="/images/img1.jpg" />
                     <kbd className="legend">Start now! </kbd>
                   </div>
-                  <div class="embed-container" >
-                  <img alt="construment tutorial video instrument" src="/images/img1.jpg"/>
-                    <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/d9QumoK2io4" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
-                  </div>
+                  <div>
+                    <img alt="construment guitar" src="/images/img2.jpg" />
+                    <kbd className="legend">Watch our tutorials </kbd>
+                  </div>*/}
                 </Carousel>
             </div>
   </div>

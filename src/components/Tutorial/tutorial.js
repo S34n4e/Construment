@@ -23,18 +23,18 @@ export default () => (
       
                 <Carousel >
                   <div className="embed-container" >
-                  <img alt="img" src="https://i.ytimg.com/vi/uynLRBLMkd0/maxresdefault.jpg"/>
-                    <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/d9QumoK2io4" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+                  <img alt="img" src="/images/miniaturatutorial.png"/>
+                    <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/s16gsNjqxhg?rel=0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
                 
                   </div>
-                  <div className="embed-container" >
+                 {/* <div className="embed-container" >
                   <img alt="img" src="https://i.ytimg.com/vi/uynLRBLMkd0/maxresdefault.jpg"/>
                     <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/d9QumoK2io4" frameborder="0" allow="autoplay; encrypted-media"></iframe>
                   </div>
                   <div className="embed-container" >
                   <img alt="img" src="https://i.ytimg.com/vi/uynLRBLMkd0/maxresdefault.jpg"/>
                     <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/d9QumoK2io4" frameborder="0" allow="autoplay; encrypted-media"></iframe>
-                  </div>
+                  </div>*/}
                 </Carousel>
                 
                 </div>
