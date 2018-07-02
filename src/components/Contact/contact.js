@@ -24,11 +24,11 @@ render() {
       <div className="w3-padding-16"><span className="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
       
       <ul className="icons">
-  								<li><a href="https://www.google.co.cr/?gws_rd=ssl" className="icon rounded fa-twitter"><span className="label">Twitter</span></a></li>
-  								<li><a href="https://www.google.co.cr/?gws_rd=ssl" className="icon rounded fa-facebook"><span className="label">Facebook</span></a></li>
+  								<li><a href="https://www.facebook.com/construmentcr" className="icon rounded fa-facebook"><span className="label">Facebook</span></a></li>
+  								{/*<li><a href="https://www.google.co.cr/?gws_rd=ssl" className="icon rounded fa-twitter"><span className="label">Twitter</span></a></li>
   								<li><a href="https://www.google.co.cr/?gws_rd=ssl" className="icon rounded fa-pinterest"><span className="label">Pinterest</span></a></li>
   								<li><a href="https://www.google.co.cr/?gws_rd=ssl" className="icon rounded fa-google-plus"><span className="label">Google+</span></a></li>
-  								<li><a href="https://www.google.co.cr/?gws_rd=ssl" className="icon rounded fa-linkedin"><span className="label">LinkedIn</span></a></li>
+  								<li><a href="https://www.google.co.cr/?gws_rd=ssl" className="icon rounded fa-linkedin"><span className="label">LinkedIn</span></a></li>*/}
   							</ul>
         <h3>Address</h3>
         <p>Leave us your comment, opinion, complaint or suggestion</p>
