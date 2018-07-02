@@ -264,7 +264,8 @@
       "part": "body",
       "price": 180,
       "color": "brown",
-      "src": "images/Partes_instrumentos/Violines/Modelo 2/cuerpo 2.png"   
+      "src": "images/Partes_instrumentos/Violines/Modelo 2/cuerpo 2.png",
+      "urlaudio":"sounds/electricviolinbase.ogg"   
     },
     "32": {
       "id": "32",
@@ -280,7 +281,8 @@
       "part": "body",
       "price": 190,
       "color": "brown",
-      "src": "images/Partes_instrumentos/Violines/Modelo 3/cuerpo 3.png"   
+      "src": "images/Partes_instrumentos/Violines/Modelo 3/cuerpo 3.png",
+      "urlaudio":"sounds/metalviolindistorsion.ogg"        
     },
     "34": {
       "id": "34",
