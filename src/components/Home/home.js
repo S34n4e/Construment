@@ -20,8 +20,8 @@ export default () => (
 				<div className="container">
                 <Carousel dynamicHeight>
                   <div class="embed-container" >
-                    <img alt="construment tutorial video instrument" src="/images/miniaturatutorial.png"/>
-                    <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/s16gsNjqxhg?rel=0" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
+                  <img alt="construment tutorial video instrument" src="/images/miniaturapromocional.png"/>
+                    <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/Lg0AklxKLzU?autoplay=1" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
                   </div>
                   <div>
                     <img alt="Create your version" src="/images/valla1.png" />
@@ -32,8 +32,9 @@ export default () => (
                     <kbd className="legend">Customize as you can </kbd>
                   </div>
                   <div class="embed-container" >
-                    <img alt="construment tutorial video instrument" src="/images/miniaturapromocional.png"/>
-                    <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/Lg0AklxKLzU?rel=0" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
+                    <img alt="construment tutorial video instrument" src="/images/miniaturatutorial.png"/>
+                    <iframe title="Construment video" width="360" height="240" src="https://www.youtube.com/embed/s16gsNjqxhg?rel=0" frameBorder="0" allow="autoplay; encrypted-media"></iframe>
+                  
                   </div>
                   
                   {/*<div>

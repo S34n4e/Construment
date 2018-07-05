@@ -25,8 +25,8 @@ function audioinstrumento(num){
     /*Función para reproducir el audio de los instrumentos, los lee de data.json*/
     audio.pause();
     audio.currentTime = 0;
-     audio = new Audio(parts.parts[num].urlaudio);
-     audio.play();
+    audio = new Audio(parts.parts[num].urlaudio);
+    audio.play();
 }
 
 function clearContent(){
@@ -62,6 +62,12 @@ function start() {
     imgNeck = document.getElementById("imgNeck");
     imgPeg = document.getElementById("imgPeg");
    leftPanel();
+     xb = 240;
+     yb = Math.max(window.innerHeight / 4 - imgBody.height / 4, 200 - imgBody.height / 4);
+     xn = 110;
+     yn = Math.max(window.innerHeight / 4 - imgNeck.height / 4, 200 - imgNeck.height / 4);
+     xp = 50;
+     yp = Math.max(window.innerHeight / 4 - imgPeg.height / 4, 200 - imgPeg.height / 4);
 }
 
 function changeImg(num, instrum){
@@ -105,7 +111,7 @@ function elements() {
     indentsBody.push(<img alt="body" src={parts.parts[31].src} width="106" height="74" onClick={function(event){changeImg(31, "body")}}></img>);
     indentsPeg.push(<img alt="peg" src={parts.parts[32].src} width="80" height="40" onClick={function(event){changeImg(32, "peg")}}></img>);
     indentsBody.push(<img alt="body" src={parts.parts[33].src} width="80" height="40" onClick={function(event){changeImg(33, "body")}}></img>);
-    indentsNeck.push(<img alt="neck" src={parts.parts[34].src} width="106" height="74" onClick={function(event){changeImg(34, "neck")}}></img>);
+    indentsNeck.push(<img alt="neck" src={parts.parts[34].src} width="90" height="30" onClick={function(event){changeImg(34, "neck")}}></img>);
     indentsPeg.push(<img alt="peg" src={parts.parts[35].src} width="80" height="40" onClick={function(event){changeImg(35, "peg")}}></img>);
     }
     
@@ -135,6 +141,13 @@ function elements() {
     
 }
 
+var xb = 240;
+var yb;
+var xn = 110;
+var yn;
+var xp = 50;
+var yp;
+
     function startKonva(){
     var count = 1;
     var stage;
@@ -149,8 +162,8 @@ function elements() {
         // darth vader
         var bodyImg2 = new window.Konva.Image({
             image: imgBody,
-            x: 240,
-            y: stage.getHeight() / 2 - imgBody.height / 4,
+            x: xb,
+            y: yb,
             width: imgBody.width/2,
             height: imgBody.height/2,
             draggable: true
@@ -164,8 +177,8 @@ function elements() {
         });
         var neckImg2 = new window.Konva.Image({
             image: imgNeck,
-            x: 110,
-            y: stage.getHeight() / 2 - imgNeck.height / 4,
+            x: xn,
+            y: yn,
             width: imgNeck.width/2,
             height: imgNeck.height/2,
             draggable: true
@@ -179,8 +192,8 @@ function elements() {
         });
         var pegImg2 = new window.Konva.Image({
             image: imgPeg,
-            x: 50,
-            y: stage.getHeight() / 2 - imgPeg.height / 4,
+            x: xp,
+            y: yp,
             width: imgPeg.width/2,
             height: imgPeg.height/2,
             draggable: true
@@ -191,6 +204,9 @@ function elements() {
         });
         pegImg2.on('mouseout', function() {
             document.body.style.cursor = 'default';
+            console.log(" x y" + xb + " " + yb  + " body");
+            console.log(" x y" + xn + " " + yn  + " neck");
+            console.log(" x y" + xp + " " + yp  + " peg");
         });
 
         /*Activa los filtros de color*/
